@@ -99,29 +99,18 @@ public class Main {
         creditBills = calculateDate(setDate(new Date().getMonth(), 23), Calendar.MONTH, 1);
 
 
-
         Map<String, Object> params = new HashMap<>();
 
         params.put("appid", appid);
         params.put("secret", appSecret);
-
-        //timer schedule
-        Timer timer = new Timer();
-
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                //get
-                System.out.println("start");
-                JSONObject entries = JSONUtil.parseObj(HttpUtil.get(url, params));
-                System.out.println("end");
-                System.out.println(entries);
-                String token = entries.getStr("access_token");
-                System.out.println("Token " + token);
-                send(token);
-                StaticLog.info("Success send.");
-            }
-        }, 0, 1000 * 60 * 2);
+        System.out.println("start");
+        JSONObject entries = JSONUtil.parseObj(HttpUtil.get(url, params));
+        System.out.println("end");
+        System.out.println(entries);
+        String token = entries.getStr("access_token");
+        System.out.println("Token " + token);
+        send(token);
+        StaticLog.info("Success send.");
 
     }
 
