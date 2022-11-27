@@ -99,7 +99,7 @@ public class Main {
         creditBills = calculateDate(setDate(new Date().getMonth(), 23), Calendar.MONTH, 1);
 
 
-        //params
+
         Map<String, Object> params = new HashMap<>();
 
         params.put("appid", appid);
