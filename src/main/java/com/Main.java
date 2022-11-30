@@ -97,7 +97,7 @@ public class Main {
         birthday = calculateDate(setDate(7, 1), Calendar.YEAR, 1);
         carBills = calculateDate(setDate(new Date().getMonth(), 15), Calendar.MONTH, 1);
         houseBills = calculateDate(setDate(new Date().getMonth(), 21), Calendar.MONTH, 1);
-        creditBills = calculateDate(setDate(new Date().getMonth(), 23), Calendar.MONTH, 1);
+        creditBills = calculateDate(setDate(new Date().getMonth(), 21), Calendar.MONTH, 1);
 
 
         Map<String, Object> params = new HashMap<>();
