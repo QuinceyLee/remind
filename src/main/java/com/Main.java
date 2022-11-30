@@ -74,8 +74,8 @@ public class Main {
      */
     public static void initSendMap() {
         //openid <-> template-id
-        sendMap.put("o5gfI6GpqpCOcfFJng4A0U8Rnq2w", "AYGm5N2HXGDtUx91aWiDQAZ8Eopo3fadsOGHWfO3o_g");
-        sendMap.put("o5gfI6EVCDjT5MrTqUqNSmt1v6y8", "AYGm5N2HXGDtUx91aWiDQAZ8Eopo3fadsOGHWfO3o_g");
+        sendMap.put("o5gfI6GpqpCOcfFJng4A0U8Rnq2w", "VVaOCIXYq9ZuNyvMGRVMWTU5LV3RJL3Hu5bgBoUJ13c");
+        sendMap.put("o5gfI6EVCDjT5MrTqUqNSmt1v6y8", "VVaOCIXYq9ZuNyvMGRVMWTU5LV3RJL3Hu5bgBoUJ13c");
     }
 
     /**
